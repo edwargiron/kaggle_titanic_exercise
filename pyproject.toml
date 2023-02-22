@@ -7,8 +7,11 @@ readme = "README.md"
 packages = [{include = "kaggle_titanic_exercise"}]
 
 [tool.poetry.dependencies]
-python = ">=3.9.*"
+python = ">=3.9.*, <4"
 
+
+[tool.poetry.group.notebooks.dependencies]
+jupyterlab = "^3.6.1"
 
 [build-system]
 requires = ["poetry-core"]
